@@ -584,9 +584,9 @@ a {
 }
 
 .certifications__image {
-  flex: 1 0 auto;
-  width: 33.33%;
+  width: 15%;
   height: auto;
+  max-width: 100%;
 }
 
 /* projects */
