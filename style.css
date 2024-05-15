@@ -573,13 +573,22 @@ a {
   }
 }
 
-.about__skill-certifications {
+.about__info-certifications {
   display: flex;
   justify-content: space-between;
 }
 
 /* certifications */
+
 .certifications__grid {
+  width: 50%;
+}
+
+.about__skill-info {
+  width: 45%;
+}
+
+/* .certifications__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
@@ -588,7 +597,7 @@ a {
 .certifications__image {
   width: 100%;
   height: auto;
-}
+} */
 
 /* projects */
 
