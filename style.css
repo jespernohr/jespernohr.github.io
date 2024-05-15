@@ -594,11 +594,17 @@ a {
 */
 /* projects */
 
+.projects__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .projects__list-item {
-  display: grid;
-  grid-template-columns: 45%;
-  grid-gap: 4rem;
-  margin-bottom: 8rem;
+  flex: 0 0 48%;
+  /* This will make each item take up approximately half of the container's width */
+  margin-bottom: 2rem;
+  /* Add some space between the rows */
 }
 
 .projects__list-item--inv {
