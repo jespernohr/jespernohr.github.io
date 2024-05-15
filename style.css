@@ -576,25 +576,13 @@ a {
 /* certifications */
 .certifications__grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
 }
 
 .certifications__image {
-  width: 5%;
+  width: 100%;
   height: auto;
-}
-
-@media (max-width: 37.5em) {
-  .certifications__grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 21.875em) {
-  .certifications__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 /* projects */
