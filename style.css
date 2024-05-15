@@ -573,6 +573,11 @@ a {
   }
 }
 
+.about__skill-certifications {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* certifications */
 .certifications__grid {
   display: grid;
