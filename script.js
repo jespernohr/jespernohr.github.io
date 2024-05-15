@@ -94,10 +94,10 @@ const hexToRgb = (hex) => {
   let result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex)
   return result
     ? {
-      r: parseInt(result[1], 16),
-      g: parseInt(result[2], 16),
-      b: parseInt(result[3], 16),
-    }
+        r: parseInt(result[1], 16),
+        g: parseInt(result[2], 16),
+        b: parseInt(result[3], 16),
+      }
     : null
 }
 
@@ -118,7 +118,7 @@ themeColorSelector.addEventListener('click', () => {
 const setDynamicColor = (color) => {
 
   const { r, g, b } = hexToRgb(`${color}`)
-
+  
   root.style.setProperty('--themeColor', `${r},${g},${b}`);
   //localStorage.setItem('color', color)
 }
@@ -139,13 +139,3 @@ const headerLogoConatiner = document.querySelector('.main-header__logo-container
 headerLogoConatiner.addEventListener('click', () => {
   location.href = 'index.html'
 })
-
-
-// new project style
-function openModal(projectId) {
-  document.getElementById(projectId).style.display = "block";
-}
-
-function closeModal(projectId) {
-  document.getElementById(projectId).style.display = "none";
-}
